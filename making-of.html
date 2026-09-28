@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Making of AI & the Future of Work — project concept, design, development and AI-assisted workflow.">
+    <title>Making of | AI & the Future of Work</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="making-of-nav">
+        <a class="making-of-logo" href="index.html">AI &amp; the Future of Work</a>
+
+        <nav class="making-of-nav-links" aria-label="Main navigation">
+            <a href="index.html" data-en="Home" data-de="Startseite">Home</a>
+            <a href="future-jobs.html" data-en="Future Jobs" data-de="Future Jobs">Future Jobs</a>
+            <a href="job-checker.html" data-en="Job Checker" data-de="Job Checker">Job Checker</a>
+            <a href="vocabulary.html" data-en="Vocabulary" data-de="Glossary">Vocabulary</a>
+            <a href="sources.html" data-en="Sources" data-de="Quellen">Sources</a>
+            <button class="making-of-control" id="language-button" type="button">DE</button>
+            <button class="making-of-control" id="theme-button" type="button">Dark</button>
+        </nav>
+    </header>
+
+    <main class="making-of-page">
+
+        <section class="making-of-hero">
+            <span class="making-of-kicker" data-en="Project documentation" data-de="Projektdokumentation">Project documentation</span>
+
+            <h1 data-en="Making of" data-de="Making of">Making of</h1>
+
+            <p
+                data-en="This page documents how the website was planned, designed and built — including the role of AI as a development and writing assistant. The goal was not simply to make a website, but to create a clear, research-based digital project about AI and the future of work."
+                data-de="Diese Seite dokumentiert, wie die Website geplant, gestaltet und entwickelt wurde – einschließlich der Rolle von KI als Unterstützung bei Entwicklung und Textarbeit. Das Ziel war nicht einfach nur eine Website, sondern ein verständliches, recherchiertes digitales Projekt über KI und die Zukunft der Arbeit."
+            >
+                This page documents how the website was planned, designed and built — including the role of AI as a development and writing assistant. The goal was not simply to make a website, but to create a clear, research-based digital project about AI and the future of work.
+            </p>
+        </section>
+
+        <section class="making-of-grid">
+
+            <article class="making-of-card">
+                <span class="making-of-number">01</span>
+                <h2 data-en="The idea" data-de="Die Idee">The idea</h2>
+                <p
+                    data-en="The project started with a simple question: how is artificial intelligence changing work, and what could that mean for different professions? The website was designed to turn that broad topic into something interactive and easy to explore."
+                    data-de="Das Projekt begann mit einer einfachen Frage: Wie verändert künstliche Intelligenz die Arbeitswelt und was könnte das für unterschiedliche Berufe bedeuten? Die Website wurde so aufgebaut, dass aus diesem großen Thema ein interaktives und verständliches Projekt wird."
+                >
+                    The project started with a simple question: how is artificial intelligence changing work, and what could that mean for different professions? The website was designed to turn that broad topic into something interactive and easy to explore.
+                </p>
+            </article>
+
+            <article class="making-of-card">
+                <span class="making-of-number">02</span>
+                <h2 data-en="Research and structure" data-de="Recherche und Struktur">Research and structure</h2>
+                <p
+                    data-en="The content was organised around several sections: a general introduction to AI, future jobs, a vocabulary section, sources and a profession-focused Job Checker. This structure connects background information with concrete examples."
+                    data-de="Die Inhalte wurden in mehrere Bereiche gegliedert: eine allgemeine Einführung in KI, Zukunftsberufe, ein Vokabular, Quellen und den berufsbezogenen Job Checker. So werden Hintergrundinformationen mit konkreten Beispielen verbunden."
+                >
+                    The content was organised around several sections: a general introduction to AI, future jobs, a vocabulary section, sources and a profession-focused Job Checker. This structure connects background information with concrete examples.
+                </p>
+            </article>
+
+            <article class="making-of-card">
+                <span class="making-of-number">03</span>
+                <h2 data-en="Design" data-de="Design">Design</h2>
+                <p
+                    data-en="The visual direction combines editorial design with technology-focused details. The aim was a professional interface with strong typography, generous spacing, subtle motion, restrained colour use and clear hierarchy instead of a typical school-project look."
+                    data-de="Die Gestaltung verbindet Editorial Design mit technologieorientierten Details. Ziel war eine professionelle Oberfläche mit klarer Typografie, viel Weißraum, dezenten Animationen, zurückhaltender Farbgestaltung und einer deutlichen Hierarchie statt eines typischen Schulprojekt-Looks."
+                >
+                    The visual direction combines editorial design with technology-focused details. The aim was a professional interface with strong typography, generous spacing, subtle motion, restrained colour use and clear hierarchy instead of a typical school-project look.
+                </p>
+            </article>
+
+            <article class="making-of-card">
+                <span class="making-of-number">04</span>
+                <h2 data-en="Building the website" data-de="Entwicklung der Website">Building the website</h2>
+                <p
+                    data-en="The website was built as a static project using HTML, CSS and JavaScript. The system was developed so that theme, language switching, navigation, animations and the Job Checker work directly in the browser without a separate backend."
+                    data-de="Die Website wurde als statisches Projekt mit HTML, CSS und JavaScript entwickelt. Theme, Sprachumschaltung, Navigation, Animationen und der Job Checker laufen direkt im Browser, ohne separates Backend."
+                >
+                    The website was built as a static project using HTML, CSS and JavaScript. The system was developed so that theme, language switching, navigation, animations and the Job Checker work directly in the browser without a separate backend.
+                </p>
+
+                <div class="making-of-tech" aria-label="Technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GitHub Pages</span>
+                </div>
+            </article>
+
+            <article class="making-of-card wide">
+                <span class="making-of-number">05</span>
+                <h2 data-en="The Job Checker" data-de="Der Job Checker">The Job Checker</h2>
+                <p
+                    data-en="The Job Checker uses a database of 1,260 professions with estimated potential AI impact values. Search supports German and English terms, aliases and common typing mistakes. Results distinguish between the profession itself and the tasks that AI could potentially influence."
+                    data-de="Der Job Checker arbeitet mit einer Datenbank aus 1.260 Berufen und geschätzten Werten für den möglichen KI-Einfluss. Die Suche unterstützt deutsche und englische Begriffe, Synonyme und häufige Tippfehler. Dabei wird zwischen dem Beruf selbst und den Tätigkeiten unterschieden, die durch KI beeinflusst werden könnten."
+                >
+                    The Job Checker uses a database of 1,260 professions with estimated potential AI impact values. Search supports German and English terms, aliases and common typing mistakes. Results distinguish between the profession itself and the tasks that AI could potentially influence.
+                </p>
+
+                <p
+                    class="making-of-quote"
+                    data-en="The important idea behind the checker: a high potential impact on tasks does not automatically mean that a profession will disappear."
+                    data-de="Die zentrale Idee des Checkers: Ein hoher möglicher Einfluss auf Tätigkeiten bedeutet nicht automatisch, dass ein Beruf verschwinden wird."
+                >
+                    The important idea behind the checker: a high potential impact on tasks does not automatically mean that a profession will disappear.
+                </p>
+            </article>
+
+            <article class="making-of-card">
+                <span class="making-of-number">06</span>
+                <h2 data-en="AI as a tool" data-de="KI als Werkzeug">AI as a tool</h2>
+                <p
+                    data-en="AI was used as a development and writing assistant during the project. It helped with code, structure, wording, debugging and ideas. The project was still reviewed, tested and adjusted manually throughout the process."
+                    data-de="KI wurde während des Projekts als Unterstützung bei Entwicklung und Textarbeit eingesetzt. Sie half bei Code, Struktur, Formulierungen, Fehlersuche und Ideen. Das Projekt wurde während des gesamten Prozesses trotzdem manuell geprüft, getestet und angepasst."
+                >
+                    AI was used as a development and writing assistant during the project. It helped with code, structure, wording, debugging and ideas. The project was still reviewed, tested and adjusted manually throughout the process.
+                </p>
+            </article>
+
+            <article class="making-of-card">
+                <span class="making-of-number">07</span>
+                <h2 data-en="Testing" data-de="Testing">Testing</h2>
+                <p
+                    data-en="A large part of the work happened after the first version was already functional: language switching, dark mode, search behaviour, fuzzy matching, mobile layouts, result cards and the many small interactions were tested and corrected repeatedly."
+                    data-de="Ein großer Teil der Arbeit fand statt, nachdem die erste Version bereits funktionierte: Sprachumschaltung, Dark Mode, Suchverhalten, Fuzzy Matching, mobile Darstellung, Ergebniskarten und viele kleine Interaktionen wurden wiederholt getestet und korrigiert."
+                >
+                    A large part of the work happened after the first version was already functional: language switching, dark mode, search behaviour, fuzzy matching, mobile layouts, result cards and the many small interactions were tested and corrected repeatedly.
+                </p>
+            </article>
+
+        </section>
+
+
+        <section class="making-of-grid">
+
+            <article class="making-of-card wide">
+                <span class="making-of-number">08</span>
+                <h2 data-en="A few lines of the code" data-de="Ein paar Zeilen Code">A few lines of the code</h2>
+                <p
+                    data-en="The site is built with ordinary browser technologies rather than a large framework. Some of the interesting parts are small: switching languages, storing the selected theme and calculating fuzzy search matches for the Job Checker."
+                    data-de="Die Website basiert auf normalen Browser-Technologien statt auf einem großen Framework. Einige der interessanten Teile sind dabei erstaunlich klein: Sprachwechsel, gespeicherter Theme-Zustand und die Fuzzy-Suche des Job Checkers."
+                >
+                    The site is built with ordinary browser technologies rather than a large framework. Some of the interesting parts are small: switching languages, storing the selected theme and calculating fuzzy search matches for the Job Checker.
+                </p>
+
+                <div class="making-of-code">
+                    <span class="making-of-code-label">JavaScript · language switching</span>
+                    <pre><code>function setLanguage(language) {
+    document
+        .querySelectorAll("[data-en][data-de]")
+        .forEach(element =&gt; {
+            element.textContent =
+                element.dataset[language];
+        });
+
+    document.documentElement.lang =
+        language === "de" ? "de" : "en";
+}</code></pre>
+                </div>
+
+                <div class="making-of-code">
+                    <span class="making-of-code-label">JavaScript · fuzzy matching</span>
+                    <pre><code>const distance =
+    levenshteinDistance(
+        normalizedA,
+        normalizedB
+    );
+
+const maxLength =
+    Math.max(
+        normalizedA.length,
+        normalizedB.length
+    );
+
+return 1 - (distance / maxLength);</code></pre>
+                </div>
+
+                <div class="making-of-code">
+                    <span class="making-of-code-label">JavaScript · persistent theme</span>
+                    <pre><code>localStorage.setItem(
+    "theme",
+    darkMode ? "dark" : "light"
+);</code></pre>
+                </div>
+            </article>
+
+        </section>
+
+<section class="making-of-numbers">
+    <div class="making-of-numbers-header">
+        <span class="making-of-number">07</span>
+
+        <div>
+            <p class="making-of-kicker" data-en="Project by the numbers" data-de="Das Projekt in Zahlen">
+                Project by the numbers
+            </p>
+
+            <h2
+                data-en="20,977 lines later."
+                data-de="20.977 Zeilen später."
+            >
+                20,977 lines later.
+            </h2>
+
+            <p
+                class="making-of-numbers-intro"
+                data-en="The project grew considerably during development. Across 13 files, the website now contains more than twenty thousand lines of HTML, CSS and JavaScript."
+                data-de="Das Projekt ist während der Entwicklung deutlich gewachsen. Über 13 Dateien verteilt enthält die Website inzwischen mehr als zwanzigtausend Zeilen HTML, CSS und JavaScript."
+            >
+                The project grew considerably during development. Across 13 files, the website now contains more than twenty thousand lines of HTML, CSS and JavaScript.
+            </p>
+        </div>
+    </div>
+
+    <div class="making-of-stats">
+
+        <div class="making-of-stat making-of-stat-total">
+            <span
+                data-en="Total"
+                data-de="Gesamt"
+            >
+                Total
+            </span>
+
+            <strong
+			data-en="20,977"
+                data-de="20.977"
+				>
+				20,977
+			</strong>
+
+            <small
+                data-en="lines of code across 13 files"
+                data-de="Zeilen Code in 13 Dateien"
+            >
+                lines of code across 13 files
+            </small>
+        </div>
+
+        <div class="making-of-stat making-of-stat-winner">
+            <span
+                data-en="And the winner is..."
+                data-de="Und der Gewinner ist..."
+            >
+                And the winner is...
+            </span>
+
+            <strong>style.css</strong>
+
+            <small>
+                <em>8,278</em>
+
+                <span
+                    data-en="lines of CSS"
+                    data-de="Zeilen CSS"
+                >
+                    lines of CSS
+                </span>
+            </small>
+        </div>
+
+    </div>
+
+    <div class="making-of-numbers-bottom">
+
+        <p
+            class="making-of-code-note"
+            data-en="At some point, the stylesheet simply became its own small project."
+            data-de="Irgendwann wurde das Stylesheet einfach zu einem kleinen eigenen Projekt."
+        >
+            At some point, the stylesheet simply became its own small project.
+        </p>
+
+        <p
+            class="making-of-code-hours"
+            data-en="Time spent building, testing and refining the project: ~51 hours. That's roughly 2.125 days!"
+            data-de="Zeit für Entwicklung, Tests und Feinschliff: ~51 Stunden. Das sind ungefähr 2,125 Tage!"
+        >
+            Time spent building, testing and refining the project: ~51 hours. That's roughly 2.125 days!
+        </p>
+
+    </div>
+</section>
+
+        <section class="making-of-people">
+            <div class="making-of-card wide">
+                <span class="making-of-number">09</span>
+                <h2 data-en="People behind the project" data-de="Die Menschen hinter dem Projekt">People behind the project</h2>
+                <p
+                    data-en="The website was a team effort. The section below can be used to credit everyone who contributed ideas, research, writing, design, testing or development."
+                    data-de="Die Website war Teamarbeit. In diesem Abschnitt können alle genannt werden, die Ideen, Recherche, Texte, Design, Tests oder Entwicklung beigesteuert haben."
+                >
+                    The website was a team effort. The section below can be used to credit everyone who contributed ideas, research, writing, design, testing or development.
+                </p>
+
+                <div class="making-of-person-grid">
+                    <article class="making-of-person">
+                        <h3>Henner Zoubek</h3>
+                        <p data-en="Project lead / ideas / research / website development" data-de="Projektleitung / Idee / Recherche / Website-Entwicklung">Project lead / ideas / research / website development</p>
+                    </article>
+
+                    <article class="making-of-person">
+                        <h3>Jackson Baratta</h3>
+                        <p data-en="Project lead / ideas / research / website testing" data-de="Projektleitung / Idee / Recherche / Website-Tests">Project lead / ideas / research / website testing</p>
+                    </article>
+					
+					<article class="making-of-person">
+                        <h3>Meltem Kara</h3>
+                        <p data-en="Project lead / ideas / research / poster " data-de="Projektleitung / Idee / Recherche / Plakat">Project lead / ideas / research / poster </p>
+                    </article>
+
+                    <article class="making-of-person">
+                        <h3>Selma Tosun</h3>
+                        <p data-en="Project lead / ideas / research / poster " data-de="Projektleitung / Idee / Recherche / Plakat">Project lead / ideas / research / poster </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="making-of-principle">
+            <h2 data-en="What this project is really about" data-de="Worum es bei diesem Projekt eigentlich geht">What this project is really about</h2>
+            <p
+                data-en="The website is not meant to predict exactly which jobs will survive. It is meant to explore how AI can change tasks, workflows and required skills — and why the future of work is likely to involve both technological change and continued human decision-making."
+                data-de="Die Website soll nicht exakt vorhersagen, welche Berufe bestehen bleiben. Sie soll zeigen, wie KI Tätigkeiten, Arbeitsabläufe und erforderliche Fähigkeiten verändern kann – und warum die Zukunft der Arbeit wahrscheinlich sowohl von technologischem Wandel als auch von weiterhin menschlichen Entscheidungen geprägt sein wird."
+            >
+                The website is not meant to predict exactly which jobs will survive. It is meant to explore how AI can change tasks, workflows and required skills — and why the future of work is likely to involve both technological change and continued human decision-making.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="making-of-footer">
+        <div class="making-of-footer-row">
+            <div class="making-of-footer-links">
+                <a href="vocabulary.html" data-en="Vocabulary" data-de="Vokabular">Vocabulary</a>
+                <a href="sources.html" data-en="Sources" data-de="Quellen">Sources</a>
+                <a href="making-of.html" data-en="Making of" data-de="Making of">Making of</a>
+                <a href="imprint.html" data-en="Imprint" data-de="Impressum">Imprint</a>
+            </div>
+
+            <div class="making-of-footer-links">
+                <button id="footer-language" type="button">EN / DE</button>
+                <button id="footer-theme" type="button">Dark Mode</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

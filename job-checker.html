@@ -1,0 +1,885 @@
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Check your job — explore how artificial intelligence could affect different tasks within a profession."
+    >
+
+    <title>
+        Check Your Job — AI &amp; The Future of Work
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a
+                href="index.html"
+                class="site-logo"
+            >
+                AI &amp; THE FUTURE OF WORK
+            </a>
+
+
+            <nav
+                class="main-navigation"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html"
+                    data-en="Home"
+                    data-de="Startseite"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="future-jobs.html"
+                    data-en="Future Jobs"
+                    data-de="Berufe der Zukunft"
+                >
+                    Future Jobs
+                </a>
+
+
+                <a
+                    href="job-checker.html"
+                    class="active"
+                    data-en="Check Your Job"
+                    data-de="Deinen Beruf prüfen"
+                >
+                    Check Your Job
+                </a>
+
+
+                <a
+                    href="sources.html"
+                    data-en="Sources"
+                    data-de="Quellen"
+                >
+                    Sources
+                </a>
+
+            </nav>
+
+
+            <div class="header-controls">
+
+                <button
+                    type="button"
+                    id="language-button"
+                    aria-label="Change language"
+                >
+                    DE
+                </button>
+
+
+                <button
+                    type="button"
+                    id="theme-button"
+                    aria-label="Toggle dark mode"
+                >
+                    Dark
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             HERO / SEARCH
+        ====================================== -->
+
+        <section class="job-checker-hero">
+
+            <div class="content-container">
+
+                <div class="job-checker-hero-content">
+
+                    <p
+                        class="section-label"
+                        data-en="04 / EXPLORE YOUR PROFESSION"
+                        data-de="04 / ENTDECKE DEINEN BERUF"
+                    >
+                        04 / EXPLORE YOUR PROFESSION
+                    </p>
+
+
+                    <h1
+                        data-en="How could AI affect your job?"
+                        data-de="Wie könnte KI deinen Beruf beeinflussen?"
+                    >
+                        How could AI affect your job?
+                    </h1>
+
+
+                    <p
+                        data-en="Search for a profession and explore which tasks could potentially be affected by artificial intelligence."
+                        data-de="Suche nach einem Beruf und entdecke, welche Aufgaben möglicherweise von künstlicher Intelligenz beeinflusst werden könnten."
+                    >
+                        Search for a profession and explore which
+                        tasks could potentially be affected by
+                        artificial intelligence.
+                    </p>
+
+
+
+                    <form
+                        class="job-search-form"
+                        id="job-search-form"
+                    >
+
+                        <div class="job-search-box">
+
+                            <span
+                                class="job-search-icon"
+                                aria-hidden="true"
+                            >
+                                /
+                            </span>
+
+
+                            <input
+                                type="search"
+                                id="job-search"
+                                name="job"
+                                autocomplete="off"
+                                spellcheck="false"
+                                placeholder="e.g. dentist, teacher, software developer..."
+                                aria-label="Search for a profession"
+                            >
+
+
+                            <button
+                                type="submit"
+                                class="job-search-button"
+                                data-en="Search"
+                                data-de="Suchen"
+                            >
+                                Search
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            class="job-suggestions"
+                            id="job-suggestions"
+                            aria-live="polite"
+                        ></div>
+
+
+                        <p
+                            class="job-search-status"
+                            id="job-search-status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+
+
+                    <div class="job-search-examples">
+
+    <span
+        data-en="Try:"
+        data-de="Probier:"
+    >
+        Try:
+    </span>
+
+
+    <button
+        type="button"
+        data-en="Dentist"
+        data-de="Zahnarzt"
+        data-search-example-en="Dentist"
+        data-search-example-de="Zahnarzt"
+    >
+        Dentist
+    </button>
+
+
+    <button
+    type="button"
+    data-en="Film Director"
+    data-de="Regisseur/in"
+    data-search-example-en="Film Director"
+    data-search-example-de="Regisseur/in"
+>
+    Film Director
+</button>
+
+
+    <button
+    type="button"
+    data-en="Teacher"
+    data-de="Lehrer"
+    data-search-example-en="Primary School Teacher"
+    data-search-example-de="Grundschullehrer/in"
+>
+    Teacher
+</button>
+
+    <button
+        type="button"
+        data-en="Software Developer"
+        data-de="Softwareentwickler"
+        data-search-example-en="Software Developer"
+        data-search-example-de="Softwareentwickler"
+    >
+        Software Developer
+    </button>
+
+</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<!-- =========================================
+     JOB RESULT
+     ========================================= -->
+
+<section class="job-result-section">
+
+    <div class="container">
+
+        <div
+            class="job-result"
+            id="job-result"
+            
+        >
+
+            <div class="section-label"
+                 data-en="RESULT"
+                 data-de="ERGEBNIS">
+                RESULT
+            </div>
+
+            <div class="job-result-header">
+
+                <div class="job-result-title-wrap">
+
+                    <h2
+    id="job-name"
+    data-en="Start your search"
+    data-de="Starte deine Suche"
+>
+    Start your search
+</h2>
+
+                    <p
+    class="job-result-secondary"
+    id="job-name-secondary"
+    data-en="Enter a profession above to begin."
+    data-de="Gib oben einen Beruf ein, um zu beginnen."
+>
+    Enter a profession above to begin.
+</p>
+
+                    <p
+                        class="job-result-id"
+                        id="job-result-id">
+                    </p>
+
+                </div>
+
+                <div class="job-result-status">
+
+                    <span
+                        class="status-dot">
+                    </span>
+
+                    <span
+                        data-en="Analysis available"
+                        data-de="Analyse verfügbar">
+                        Analysis available
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="job-result-main">
+
+                <!-- =========================================
+                     LEFT: JOB INFORMATION
+                     ========================================= -->
+
+                <div class="job-result-information">
+
+                    <article class="job-info-card">
+
+                        <div class="job-info-card-label"
+                             data-en="ABOUT THE JOB"
+                             data-de="ÜBER DEN BERUF">
+                            ABOUT THE JOB
+                        </div>
+
+                        <p
+    id="job-description"
+    data-en="Enter something in the search field to start the search."
+    data-de="Gib etwas in das Suchfeld ein, um die Suche zu starten."
+>
+    Enter something in the search field to start the search.
+</p>
+
+                    </article>
+
+
+                    <article class="job-info-card">
+
+                        <div class="job-info-card-label"
+                             data-en="HOW AI COULD HELP"
+                             data-de="WIE KI HELFEN KÖNNTE">
+                            HOW AI COULD HELP
+                        </div>
+
+                        <p
+    id="job-ai-help"
+    data-en="Your result will show how AI could affect tasks in this profession."
+    data-de="Dein Ergebnis zeigt, wie KI die Tätigkeiten in diesem Beruf beeinflussen könnte."
+>
+    Your result will show how AI could affect tasks in this profession.
+</p>
+
+                    </article>
+
+
+                    <article class="job-info-card job-match-card">
+
+                        <div class="job-info-card-label"
+                             data-en="SEARCH MATCH"
+                             data-de="SUCHTREFFER">
+                            SEARCH MATCH
+                        </div>
+
+                        <p
+    id="job-match-text"
+    data-en="Enter a profession to see the search match."
+    data-de="Gib einen Beruf ein, um den Suchtreffer zu sehen."
+>
+    Enter a profession to see the search match.
+</p>
+
+                        <div
+                            class="job-match-information"
+                            id="job-match-information">
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- =========================================
+                     RIGHT: AI IMPACT
+                     ========================================= -->
+
+                <aside class="job-impact-panel">
+
+                    <div class="job-impact-panel-top">
+
+                        <div class="job-impact-label"
+                             data-en="ESTIMATED AI IMPACT"
+                             data-de="GESCHÄTZTER KI-EINFLUSS">
+                            ESTIMATED AI IMPACT
+                        </div>
+
+                        <div class="job-impact-subtitle"
+                             data-en="Estimated impact on tasks"
+                             data-de="Geschätzter Einfluss auf Tätigkeiten">
+                            Estimated impact on tasks
+                        </div>
+
+                    </div>
+
+
+                    <!-- SEMICIRCULAR GAUGE -->
+
+                    <div class="job-gauge">
+
+                        <svg
+                            class="job-gauge-svg"
+                            viewBox="0 0 200 135"
+                            aria-hidden="true">
+
+                            <path
+                                class="job-gauge-track"
+                                d="M 20 115 A 80 80 0 0 1 180 115">
+                            </path>
+
+                            <path
+                                class="job-gauge-progress"
+                                id="job-impact-progress"
+                                d="M 20 115 A 80 80 0 0 1 180 115">
+                            </path>
+
+                        </svg>
+
+
+                        <div class="job-gauge-value">
+
+                            <strong
+                                id="job-impact-number">
+                                0
+                            </strong>
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+    class="job-impact-category"
+    id="job-impact-category"
+    data-en="Waiting for a profession"
+    data-de="Warte auf einen Beruf"
+>
+    Waiting for a profession
+</div>
+
+
+                    <div class="job-impact-divider"></div>
+
+
+                    <p class="job-impact-note"
+                       data-en="This percentage estimates how strongly AI could affect the tasks associated with this profession. It is not a prediction that the profession will disappear."
+                       data-de="Dieser Prozentsatz schätzt ein, wie stark KI die mit diesem Beruf verbundenen Tätigkeiten beeinflussen könnte. Er ist keine Vorhersage, dass der Beruf verschwinden wird.">
+
+                        This percentage estimates how strongly AI could affect the tasks associated with this profession. It is not a prediction that the profession will disappear.
+
+                    </p>
+
+                </aside>
+
+            </div>
+
+
+            <!-- =========================================
+                 RESULT FOOTER
+                 ========================================= -->
+
+            <div class="job-result-footer">
+
+                <div class="job-result-footer-line"></div>
+
+                <div class="job-result-footer-content">
+
+                    <span
+                        data-en="Based on the job database used for this project."
+                        data-de="Basierend auf der für dieses Projekt verwendeten Berufsdatenbank.">
+                        Based on the job database used for this project.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =====================================
+             HOW IT WORKS
+        ====================================== -->
+
+        <section class="job-checker-method">
+
+            <div class="content-container">
+
+                <div class="section-header">
+
+                    <p
+                        class="section-label"
+                        data-en="HOW IT WORKS"
+                        data-de="SO FUNKTIONIERT ES"
+                    >
+                        HOW IT WORKS
+                    </p>
+
+
+                    <h2
+                        data-en="A search engine built for real-world input."
+                        data-de="Eine Suchmaschine für echte Eingaben."
+                    >
+                        A search engine built for real-world input.
+                    </h2>
+
+
+                    <p
+                        class="section-introduction"
+                        data-en="You do not have to type the exact professional title. The checker can recognize common alternatives, variations and small spelling mistakes."
+                        data-de="Du musst nicht die exakte Berufsbezeichnung eingeben. Der Checker kann gängige Varianten, alternative Bezeichnungen und kleine Rechtschreibfehler erkennen."
+                    >
+                        You do not have to type the exact professional
+                        title. The checker can recognize common
+                        alternatives, variations and small spelling mistakes.
+                    </p>
+
+                </div>
+
+
+                <div class="job-checker-method-grid">
+
+
+                    <article class="job-method-card">
+
+                        <span class="job-method-number">
+                            01
+                        </span>
+
+
+                        <h3
+                            data-en="Exact matches"
+                            data-de="Exakte Treffer"
+                        >
+                            Exact matches
+                        </h3>
+
+
+                        <p
+                            data-en="The system first checks whether the entered profession matches a stored job title directly."
+                            data-de="Zuerst prüft das System, ob der eingegebene Beruf direkt mit einer gespeicherten Berufsbezeichnung übereinstimmt."
+                        >
+                            The system first checks whether the entered
+                            profession matches a stored job title directly.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="job-method-card">
+
+                        <span class="job-method-number">
+                            02
+                        </span>
+
+
+                        <h3
+                            data-en="Aliases & synonyms"
+                            data-de="Varianten & Synonyme"
+                        >
+                            Aliases &amp; synonyms
+                        </h3>
+
+
+                        <p
+                            data-en="Each profession can contain alternative names such as dentist, dental professional or other common forms."
+                            data-de="Jeder Beruf kann alternative Bezeichnungen enthalten, zum Beispiel Zahnarzt, Zahnmediziner oder andere gängige Formen."
+                        >
+                            Each profession can contain alternative
+                            names such as dentist, dental professional
+                            or other common forms.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="job-method-card">
+
+                        <span class="job-method-number">
+                            03
+                        </span>
+
+
+                        <h3
+                            data-en="Typo tolerance"
+                            data-de="Tippfehler-Toleranz"
+                        >
+                            Typo tolerance
+                        </h3>
+
+
+                        <p
+                            data-en="A fuzzy matching system compares similar words, so small spelling mistakes can still lead to the correct result."
+                            data-de="Ein Fuzzy-Matching-System vergleicht ähnliche Wörter, sodass auch kleine Rechtschreibfehler zum richtigen Ergebnis führen können."
+                        >
+                            A fuzzy matching system compares similar
+                            words, so small spelling mistakes can still
+                            lead to the correct result.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CTA
+        ====================================== -->
+
+        <section class="job-checker-cta">
+
+            <div class="content-container">
+
+                <div class="job-checker-cta-content">
+
+                    <p
+                        class="section-label"
+                        data-en="EXPLORE THE TOPIC"
+                        data-de="THEMA ERKUNDEN"
+                    >
+                        EXPLORE THE TOPIC
+                    </p>
+
+
+                    <h2
+                        data-en="The future of work is about tasks, skills and people."
+                        data-de="Die Zukunft der Arbeit dreht sich um Aufgaben, Fähigkeiten und Menschen."
+                    >
+                        The future of work is about tasks,
+                        skills and people.
+                    </h2>
+
+
+                    <a
+                        href="future-jobs.html"
+                        class="button button-primary"
+                        data-en="Explore Future Jobs"
+                        data-de="Berufe der Zukunft entdecken"
+                    >
+                        Explore Future Jobs
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    AI &amp; THE FUTURE OF WORK
+                </h3>
+
+
+                <p
+                    data-en="An educational project about artificial intelligence, digitalization and the future of work."
+                    data-de="Ein Bildungsprojekt über künstliche Intelligenz, Digitalisierung und die Zukunft der Arbeit."
+                >
+                    An educational project about artificial
+                    intelligence, digitalization and the
+                    future of work.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-navigation">
+
+                <div class="footer-column">
+
+                    <h4
+                        data-en="Explore"
+                        data-de="Entdecken"
+                    >
+                        Explore
+                    </h4>
+
+
+                    <a
+                        href="index.html"
+                        data-en="Home"
+                        data-de="Startseite"
+                    >
+                        Home
+                    </a>
+
+
+                    <a
+                        href="future-jobs.html"
+                        data-en="Future Jobs"
+                        data-de="Berufe der Zukunft"
+                    >
+                        Future Jobs
+                    </a>
+
+
+                    <a
+                        href="job-checker.html"
+                        data-en="Check Your Job"
+                        data-de="Deinen Beruf prüfen"
+                    >
+                        Check Your Job
+                    </a>
+
+
+                    <a
+                        href="sources.html"
+                        data-en="Sources"
+                        data-de="Quellen"
+                    >
+                        Sources
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4
+                        data-en="Project"
+                        data-de="Projekt"
+                    >
+                        Project
+                    </h4>
+
+
+                    <a
+                        href="vocabulary.html"
+                        data-en="Vocabulary"
+                        data-de="Vokabeln"
+                    >
+                        Vocabulary
+                    </a>
+					
+					<a
+    href="making-of.html"
+    data-en="Making of"
+    data-de="Making of"
+>
+    Making of
+</a>
+
+
+                    <a
+                        href="imprint.html"
+                        data-en="Imprint"
+                        data-de="Impressum"
+                    >
+                        Imprint
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Henner Zoubek — AI &amp; The Future of Work
+                </p>
+
+
+                <div class="footer-controls">
+
+                    <button
+                        type="button"
+                        id="footer-language"
+                    >
+                        EN / DE
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="footer-theme"
+                    >
+                        Dark Mode
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="job-content.js"></script>
+<script src="job-data.js"></script>
+<script src="job-english.js"></script>
+<script src="script.js"></script>
+<script src="job-checker.js"></script>
+
+</body>
+
+</html>
