@@ -54,7 +54,7 @@ No large web framework is required to run the project.
 - 13 files
 - 20,977 lines of code
 - 8,278 lines of CSS
-- Approximately **51 hours spent building, testing and refining the project
+- Approximately 51 hours spent building, testing and refining the project
 
 ## Development
 
