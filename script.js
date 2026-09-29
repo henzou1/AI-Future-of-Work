@@ -188,3 +188,53 @@ const savedLanguage =
 
 setTheme(savedTheme);
 setLanguage(savedLanguage);
+
+
+/* =========================================
+   PROJECT RIGHTS NOTICE
+   ========================================= */
+
+const rightsNotice =
+    document.getElementById("rights-notice");
+
+const rightsNoticeAccept =
+    document.getElementById("rights-notice-accept");
+
+
+if (
+    rightsNotice &&
+    rightsNoticeAccept
+) {
+
+    const noticeAccepted =
+        sessionStorage.getItem(
+            "projectRightsNoticeAccepted"
+        );
+
+
+    if (noticeAccepted === "true") {
+
+        rightsNotice.classList.add(
+            "hidden"
+        );
+
+    }
+
+
+    rightsNoticeAccept.addEventListener(
+        "click",
+        () => {
+
+            sessionStorage.setItem(
+                "projectRightsNoticeAccepted",
+                "true"
+            );
+
+            rightsNotice.classList.add(
+                "hidden"
+            );
+
+        }
+    );
+
+}
