@@ -192,7 +192,7 @@ setLanguage(savedLanguage);
 
 /* =========================================
    PROJECT RIGHTS NOTICE
-   ========================================= */
+========================================== */
 
 const rightsNotice =
     document.getElementById("rights-notice");
@@ -212,7 +212,9 @@ if (
         );
 
 
-    if (noticeAccepted === "true") {
+    if (
+        noticeAccepted === "true"
+    ) {
 
         rightsNotice.classList.add(
             "hidden"
