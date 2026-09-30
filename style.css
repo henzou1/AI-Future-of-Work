@@ -7782,6 +7782,10 @@ html.dark-mode .job-match-information {
             gap: 18px;
         }
 
+.making-of-grid + .making-of-grid {
+    margin-top: 18px;
+}
+
         .making-of-card {
             padding: 32px;
             border: 1px solid var(--border-color);
