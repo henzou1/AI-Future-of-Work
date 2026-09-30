@@ -884,7 +884,16 @@ a,
     box-shadow:
         var(--shadow-sm);
 }
+.vocabulary-cta .button-secondary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
 
+.vocabulary-cta .button-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border-color: #ffffff;
+}
 
 /* =========================================================
    11. CONTENT SECTIONS
